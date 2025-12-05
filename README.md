@@ -1,11 +1,11 @@
 # FusionAuth Quickstart: React SPA
 
-See the [FusionAuth React Quick Start documentation here](https://fusionauth.io/docs/quickstarts/quickstart-javascript-react-web).
-
 This repository contains:
 
-- a locally-hosted FusionAuth authorization server that runs in a Docker container
+- a locally-hosted FusionAuth authorization server that runs in a container group
 - frontend React code for each step of the quickstart
+
+For full instructions, see the [FusionAuth React Quickstart](https://fusionauth.io/docs/quickstarts/quickstart-react).
 
 ## Dependencies
 
