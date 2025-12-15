@@ -7,7 +7,7 @@ export default function Home() {
 
   const { isLoggedIn, startLogin, startLogout, userInfo } = useFusionAuth();
   useEffect(() => {
-    // Post-login redirect to account page
+    // Post-authentication redirect to account page
     if (isLoggedIn && sessionStorage.getItem('justLoggedIn') === 'true') {
       sessionStorage.removeItem('justLoggedIn');
       navigate("/account");
@@ -15,6 +15,7 @@ export default function Home() {
   }, [isLoggedIn, navigate]);
 
   return (
+    // show logout button for authenticated users, login button for all others
     <div>
       <div className="titlebar">
         {isLoggedIn ? (

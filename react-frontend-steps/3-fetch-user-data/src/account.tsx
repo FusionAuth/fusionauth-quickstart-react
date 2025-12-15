@@ -5,9 +5,11 @@ import { useEffect, useState } from 'react';
 export default function Account() {
   const navigate = useNavigate();
 
+  // use fusionauth SDK methods to handle authentication, logout, and user data fetching
   const { isLoggedIn, isFetchingUserInfo, startLogout, userInfo } = useFusionAuth();
   const [newUserInfo, setNewUserInfo] = useState({'given_name': '', 'family_name': '', 'birthdate': ''});
 
+  // if user is not authenticated, redirect them back to the login page
   useEffect(() => { if (!isLoggedIn) navigate("/"); }, [isLoggedIn, navigate]);
 
   async function getUserInfo() {
