@@ -52,6 +52,9 @@
             "debug": false,
             "enabled": true,
             "preflightMaxAgeInSeconds": 0
+          },
+          "usageDataConfiguration": {
+            "enabled": true
           }
         }
       }
