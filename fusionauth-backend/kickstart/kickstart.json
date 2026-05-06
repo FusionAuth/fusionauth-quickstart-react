@@ -25,13 +25,13 @@
     {
       "method": "POST",
       "url": "/api/key/generate/#{asymmetricKeyId}",
-      "tenantId": "#{defaultTenantId}",
       "body": {
         "key": {
           "algorithm": "RS256",
           "name": "For Quick Start App",
           "length": 2048
-        }
+        },
+        "tenantId": "#{defaultTenantId}"
       }
     },
     {
