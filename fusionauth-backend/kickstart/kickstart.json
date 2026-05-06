@@ -30,8 +30,7 @@
           "algorithm": "RS256",
           "name": "For Quick Start App",
           "length": 2048
-        },
-        "tenantId": "#{defaultTenantId}"
+        }
       }
     },
     {
